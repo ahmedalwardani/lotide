@@ -1,8 +1,8 @@
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
-    console.log(`✅✅✅Assertion Passed: ${actual} === ${expected}`);
+    return `✅✅✅Assertion Passed: ${actual} === ${expected}`;
   } else {
-    console.log(`❌❌❌Assertion Failed: ${actual} !== ${expected}`);
+    return `❌❌❌Assertion Failed: ${actual} !== ${expected}`;
   }
 };
 
@@ -12,7 +12,7 @@ const tail = function(array) {
 
 const fullName = ["Ahmed", "Mohamed", "Alwardani"];
 tail(fullName);
-assertEqual(fullName.length, 3);
+console.log(assertEqual(fullName.length, 3));
 
-assertEqual([], 0);
-assertEqual(["test"], 0);
+console.log(assertEqual([], 0));
+console.log(assertEqual(["test"], 0));
