@@ -15,4 +15,8 @@ tail(fullName);
 console.log(assertEqual(fullName.length, 3));
 
 console.log(assertEqual([], 0));
+<<<<<<< HEAD
 console.log(assertEqual(["test"], 0));
+=======
+console.log(assertEqual(["test"], 0));
+>>>>>>> 7675102ba7022495392c0e3cb82f30994b8175be
