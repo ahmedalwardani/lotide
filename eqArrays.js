@@ -11,6 +11,9 @@ const eqArrays = function(arr1, arr2) {
     return false;
   }
   for (let i = 0; i < arr1.length; i++) {
+    if (Array.isArray(arr1) && Array.isArray(arr2)) {
+      return eqArrays(arr1[i], arr2[i]);
+    }
     if (arr1[i] !== arr2[i]) {
       return false;
     }
@@ -21,3 +24,5 @@ const eqArrays = function(arr1, arr2) {
 console.log(assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true));
 console.log(assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true));
 console.log(assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), true));
+console.log(assertEqual(eqArrays([[2, 3], [4]], [[2, 3], [4]]), true));
+console.log(assertEqual(eqArrays([[2, 3], [4]], [[2, 3], 4]), false));
