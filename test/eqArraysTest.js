@@ -1,3 +1,5 @@
+//use isTrue and isFalse
+
 const eqArrays = require("../eqArrays");
 const assert = require("chai").assert;
 
