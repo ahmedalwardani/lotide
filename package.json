@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@ahmedalwardani/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "description": "Lotide project - manipulates and compare data in arrays and objects",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -19,7 +19,7 @@
     "type": "git",
     "url": "git+https://github.com/ahmedalwardani/lotide.git"
   },
-  "author": "",
+  "author": "Linh Nguyen and Ahmed Alwardani",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ahmedalwardani/lotide/issues"
