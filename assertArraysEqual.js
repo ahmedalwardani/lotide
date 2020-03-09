@@ -19,4 +19,4 @@ const assertArraysEqual = function(arr1, arr2) {
 };
 
 
-assertArraysEqual([1, 2, 5], [1, 2, 4]);
+module.exports = assertArraysEqual;
