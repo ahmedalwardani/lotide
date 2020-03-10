@@ -1,6 +1,6 @@
 {
   "name": "@ahmedalwardani/lotide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lotide project - manipulates and compare data in arrays and objects",
   "main": "index.js",
   "directories": {

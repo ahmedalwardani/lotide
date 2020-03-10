@@ -5,19 +5,19 @@ const assert = require("chai").assert;
 
 describe("#eqArray", () => {
   it("should return true for [1, 2, 3] [1, 2, 3]", () => {
-    assert.strictEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
+    assert.isTrue(eqArrays([1, 2, 3], [1, 2, 3]));
   });
 
   it("should return false for [1, 2, 3, 4] [1, 2, 3]", () => {
-    assert.strictEqual(eqArrays([1, 2, 3], [1, 2, 3, 4]), false);
+    assert.isFalse(eqArrays([1, 2, 3], [1, 2, 3, 4]));
   });
 
-  it("should return true for [1, 2, 3] [1, 2, [0, 1]]", () => {
-    assert.strictEqual(eqArrays([1, 2, 3], [1, 2, [0, 1]]), false);
+  it("should return false for [1, 2, 3] [1, 2, [0, 1]]", () => {
+    assert.isFalse(eqArrays([1, 2, 3], [1, 2, [0, 1]]), false);
   });
 
   it("should return true for [1, 2, [3, 4]] [1, 2, [3, 4]]", () => {
-    assert.strictEqual(eqArrays([1, 2, [3, 4]], [1, 2, [3, 4]]), true);
+    assert.isTrue(eqArrays([1, 2, [3, 4]], [1, 2, [3, 4]]));
   });
 });
 
