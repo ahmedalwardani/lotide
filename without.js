@@ -13,7 +13,7 @@ const without = function(srcArray, itemsToRemoveArray) {
 };
 
 module.exports = without;
-// console.log(assertArraysEqual(without([1, 2, 3, 4, 5], [1, 5]), [2, 3, 4]));
+console.log(assertArraysEqual(without([1, 2, 3, 4, 5], [1, 5]), [2, 3, 4]));
 
 // const words = ["hello", "world", "lighthouse"];
 // console.log(without(["hello", "world", "lighthouse"], ["lighthouse"]));

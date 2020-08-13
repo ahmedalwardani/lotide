@@ -12,3 +12,4 @@ const countLetters = function(sentence) {
 };
 
 module.exports = countLetters;
+

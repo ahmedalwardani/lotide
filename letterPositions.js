@@ -1,15 +1,31 @@
+const assertArraysEqual = require("./assertArraysEqual");
+
 const letterPositions = function(sentence) {
   const results = {};
-  let i = 0;
-  for (const letter of sentence) {
-    if (results[letter]) {
-      results[letter].push(i);
+  for (let i = 0; i < sentence.length; i++) {
+    if (results[sentence[i]]) {
+      results[sentence[i]].push(i);
     } else {
-      results[letter] = [i];
+      results[sentence[i]] = [i];
     }
-    i++;
   }
+
+
+
+
+  // let i = 0;
+  // for (const letter of sentence) {
+  //   if (results[letter]) {
+  //     results[letter].push(i);
+  //   } else {
+  //     results[letter] = [i];
+  //   }
+  //   i++;
+  // }
   return results;
 };
 
 module.exports = letterPositions;
+
+assertArraysEqual(letterPositions("Ahmed").e, [3]);
+
