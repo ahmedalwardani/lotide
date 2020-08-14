@@ -7,7 +7,7 @@ const eqArrays = function(arr1, arr2) {
   for (let i = 0; i < arr1.length; i++) {
     //if individual entries are arrays in themselves
     if (Array.isArray(arr1[i]) && Array.isArray(arr2[i])) {
-      return eqArrays(arr1[i], arr2[i]);
+      return eqArrays(arr1[i], arr2[i]); //run function again with those arrays
     }
     if (arr1[i] !== arr2[i]) {
       isEqual = false;
