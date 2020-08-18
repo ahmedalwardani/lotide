@@ -6,6 +6,7 @@ const eqObjects = function(object1, object2) {
   let object2Keys = Object.keys(object2); //returns [an array of object2 keys]
   let result = object1Keys.length === object2Keys.length; //check first if both objects have the same number of key-value pairs
   
+
   for (const key of object1Keys) {
     if (Array.isArray(object1[key]) && Array.isArray(object2[key])) { //if the value of the key is an array in both objects (both values in the two objects at that key are arrays)
       if (!(eqArrays(object1[key], object2[key]))) { //check if the arrays are not equal
@@ -26,9 +27,18 @@ const ab = { a: "1", b: "2" };
 const ba = { b: "2", a: "1" };
 const abc = { a: "1", b: "2", c: "3" };
 
+const cd = { c: "1", d: ["2", 3] };
+const dc = { d: ["2", 3], c: "1" };
+const cd2 = { c: "1", d: ["2", 3, 4] };
+
+
 
 assertEqual(eqObjects(ab, ba), true);
 assertEqual(eqObjects(ab, abc), false);
+
+assertEqual(eqObjects(cd, dc), true);
+assertEqual(eqObjects(cd, cd2), false);
+
 
 
 module.exports = eqObjects;

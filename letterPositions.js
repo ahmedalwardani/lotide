@@ -13,6 +13,8 @@ const letterPositions = function(sentence) {
 
 
 
+
+
   // let i = 0;
   // for (const letter of sentence) {
   //   if (results[letter]) {
