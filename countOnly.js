@@ -1,6 +1,5 @@
 const assertEqual = require("./assertEqual");
 
-
 const countOnly = function(allItems /*array*/, itemsToCount /*object*/) {
   const results = {};
   for (const item of allItems) {
